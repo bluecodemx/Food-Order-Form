@@ -24,24 +24,19 @@
   </div>
   <div class="col-lg-3">
     <label for="validationCustom04" class="form-label">Order: </label>
-    <select class="form-select" id="validationCustom04" name="foodOrder"  required>
-      <option selected disabled value="foodMenu"></option>
-      <option>Nasi Goreng</option>
-      <option>Mie Goreng</option>
-      <option>Sate Padang</option>
-      <option selected disabled value="drinkMenu"></option>
-      <option>Es teh Manis</option>
-      <option>Tes Manis Hangat</option>
-      <option>Teh Tawar</option>
-      <option>Susu Soda</option>
+    <select class="form-select" name="foodOrder" required aria-label="select example">
+      <option value="">Pilih Menu Makanan -----</option>
+      <option value="Nasi Goreng" id="firstItem">Nasi Goreng</option>
+      <option value="Mie Goreng / Rebus" id="secondItem">Mie Goreng / Rebus</option>
+      <option value="Bubur Ayam" id="thirdItem">Bubur Ayam</option>
     </select>
     <div class="invalid-feedback">
-      Masukan Pesanan Anda!
+      Masukan Nama Pesanan Anda !
     </div>
   </div>
   <div class="col-sm-1">
     <label for="validationCustom05" class="form-label">Jumlah: </label>
-    <input type="number" name="portion" class="form-control" id="validationCustom05" required>
+    <input type="number" min="1" name="portion" class="form-control" id="validationCustom05" required>
     <div class="invalid-feedback">
       Masukan Jumlah Porsi Pesanan Anda!
     </div>
@@ -56,7 +51,8 @@
 <!-- button Submit -->
 
 </div>
-<div class="container d-flex align-items-center justify-content-center bg-success text-white flex-column" style="margin-top: 2rem;">
+<!-- start Script Detail Pesanan -->
+<div class="container d-flex align-items-center justify-content-center bg-success text-white flex-column rounded-1" style="margin-top: 2rem;">
 <div class="col">
   <h1>Detail Pesanan Anda</h1>
   <div class="border-bottom border-1 pb-2" ></div>
